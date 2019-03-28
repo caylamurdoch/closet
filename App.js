@@ -7,18 +7,18 @@ import FlowChart from './src/components/FlowChart';
 const slides = [
   {
     key: 'intro1',
-    title: 'Welcome to the\nCloset Sorter!',
+    title: 'Welcome to the Closet Sorter!',
     text: 'Swipe to continue',
     backgroundColor: '#59b2ab',
   },
   {
     key: 'intro2',
-    title: 'Grab one item\nof clothing...',
+    title: 'Grab one item of clothing...',
     backgroundColor: '#febe29',
   },
   {
     key: 'intro3',
-    title: 'Got one?\nThen start sorting!',
+    title: 'Got one? Then start sorting!',
     backgroundColor: '#22bcb5',
   }
 ];
@@ -46,7 +46,7 @@ export default class App extends Component {
     if (this.state.showRealApp) {
       return (
         <View style={styles.container}>
-		  <FlowChart />
+		      <FlowChart />
         </View>
       );
     } else {
@@ -73,13 +73,14 @@ const styles = StyleSheet.create({
   instructions: {
     textAlign: 'center',
     color: '#333333',
-	margin: 10,
+	  margin: 10,
     marginBottom: 5,
   },
   slide: {
     flex: 1,
-	backgroundColor: '#FF4F58',
+	  backgroundColor: '#FF4F58',
     justifyContent: 'center',
+    padding: 75
   },
   text: {
     color: 'rgba(255, 255, 255, 0.8)',
