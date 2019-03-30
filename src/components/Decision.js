@@ -17,24 +17,46 @@ class Decision extends Component {
     }
 
     render() {
-        return (
-			<View style={styles.container}>
-                <View style={styles.button}>
-				    <Button
-				        onPress={this.onLeftPress}
-		              title="Yes"
-		              color="#FF4F58"
-				    />
+        if (this.props.decisionType === 'standard') {
+            return (
+                <View style={styles.container}>
+                    <View style={styles.button}>
+                        <Button
+                            onPress={this.onLeftPress}
+                            title="Yes"
+                            color="#FF4F58"
+                        />
+                    </View>
+                    <View style={styles.button}>
+                        <Button
+                            onPress={this.onRightPress}
+                            title="No"
+                            color="#FF4F58"
+                        />
+                    </View>
                 </View>
-                <View style={styles.button}>
-		            <Button
-			            onPress={this.onRightPress}
-			            title="No"
-			            color="#FF4F58"
-		            />
+            );
+        }
+        else if (this.props.decisionType === 'other') {
+            return (
+                <View style={styles.container}>
+                    <View style={styles.button}>
+                        <Button
+                            onPress={this.onLeftPress}
+                            title="Great!"
+                            color="#FF4F58"
+                        />
+                    </View>
+                    <View style={styles.button}>
+                        <Button
+                            onPress={this.onRightPress}
+                            title="Meh"
+                            color="#FF4F58"
+                        />
+                    </View>
                 </View>
-            </View>
-        );
+            );
+        }
     }
 }
 

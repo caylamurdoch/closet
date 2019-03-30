@@ -8,7 +8,7 @@ const slides = [
   {
     key: 'intro1',
     title: 'Welcome to the Closet Sorter!',
-    text: 'Swipe to continue',
+    //text: 'Swipe to continue',
     backgroundColor: '#59b2ab',
   },
   {
