@@ -57,6 +57,19 @@ class Decision extends Component {
                 </View>
             );
         }
+        else if (this.props.decisionType === 'restart') {
+            return (
+                <View style={styles.container}>
+                    <View style={styles.button}>
+                        <Button
+                            onPress={this.onLeftPress}
+                            title="Next item ->"
+                            color="#FF4F58"
+                        />
+                    </View>
+                </View>
+            );
+        }
     }
 }
 

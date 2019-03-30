@@ -11,12 +11,11 @@ class Q3 extends Component {
 
     onPress = (decisionLeft) => {
         if (decisionLeft) {
-            this.props.setPress(true);
+            this.props.setPress(true, 'q3');
         }
         else {
-            this.props.setPress(false);
+            this.props.setPress(false, 'q3');
         }
-        this.props.setSeen('q3');
     }
 
     render() {

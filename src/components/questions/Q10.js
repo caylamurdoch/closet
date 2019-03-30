@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import { Button } from 'react-native';
 import Decision from '../Decision';
 
-class Q2 extends Component {
+class Q10 extends Component {
     constructor(props) {
         super(props);
         this.state = {};    
@@ -11,17 +11,17 @@ class Q2 extends Component {
 
     onPress = (decisionLeft) => {
         if (decisionLeft) {
-            this.props.setPress(true, 'q2');
+            this.props.setPress(true, 'q10');
         }
         else {
-            this.props.setPress(false, 'q2');
+            this.props.setPress(false, 'q10');
         }
     }
 
     render() {
         return (
             <View style={styles.container} >
-                <Text style={styles.question}>Put it on. Does it fit?</Text>
+                <Text style={styles.question}>Can you fix it right now?</Text>
                 <Decision decisionType={'standard'} onPress={this.onPress} />
             </View>
         );
@@ -41,4 +41,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default Q2;
+export default Q10;
