@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Image } from 'react-native';
 import { Button } from 'react-native';
 import Decision from '../Decision';
 
@@ -16,7 +16,7 @@ class S3 extends Component {
     render() {
         return (
             <View style={styles.container} >
-                <Text style={styles.question}>Toss it!</Text>
+                <Image source={require('./toss.png')} style={styles.image}/>
                 <Decision decisionType={'restart'} onPress={this.onPress} />
             </View>
         );
@@ -33,6 +33,11 @@ const styles = StyleSheet.create({
     question: {
         fontSize: 22,
         textAlign: 'center',
+    },
+    image: {
+        flex: 1,
+        width: 200,
+        marginTop: 30,
     }
 });
 

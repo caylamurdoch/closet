@@ -66,7 +66,7 @@ class FlowChart extends Component {
                 this.setState({ curr: 's2' });
             }
             else {
-                this.setState({ curr: 'q8' });
+                this.setState({ curr: 'q7' });
             }
         }
         else if (seen === 'q6') {
